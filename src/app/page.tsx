@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -103,6 +104,28 @@ export default function Home() {
           for details about all of the reunion events.
         </p>
       </section>
+      <div className="relative h-[500px]">
+        {" "}
+        {/* Adjust the height as needed */}
+        {/* Other content of the parent element goes here */}
+        <a href="https://www.helixcharter.net/" target="_blank">
+          <div
+            className="fixed bottom-0 right-0 bg-white p-14 rounded-full -mb-16 -mr-16"
+            style={{
+              width: "200px",
+              height: "200px",
+            }}
+          >
+            <Image
+              width="188"
+              height="122"
+              src="/helix-logo.png"
+              alt="Helix Charter High School Logo"
+              className="relative bottom-0 right-5"
+            />
+          </div>
+        </a>
+      </div>
     </main>
   );
 }
