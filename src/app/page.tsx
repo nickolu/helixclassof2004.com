@@ -2,96 +2,107 @@ import React from "react";
 
 export default function Home() {
   return (
-    <main className="main bg-black text-white p-8">
-      <p className="text-xs mb-2">
-        Printable Version:{" "}
+    <main className="bg-black text-white p-8">
+      <div className="printable-version text-right mb-4">
         <a
           href="/flyer-dinner.jpeg"
-          className="text-green-500 hover:text-green-300"
+          className="text-green-500 hover:text-green-300 text-sm"
           target="_blank"
+          rel="noopener noreferrer"
         >
-          click here
+          Printable Version
         </a>
-      </p>
-      <h1 className="text-4xl font-bold text-gold mb-4">
-        Helix High School Class of 2004
-      </h1>
-      <h2 className="mb-4 text-2xl">20 Year Reunion</h2>
+      </div>
 
-      <div className="time mb-4">
-        <p className="mb-2">
-          Saturday, June 29th, 2024 <br />
-          6:00 PM - 8:30 PM
-        </p>
-        <p className="font-semibold">Dinner will start at 6pm!</p>
-      </div>
-      <div className="location mb-4">
-        <p className="location-name font-bold mb-1">Giardino Restaurant</p>
-        <p className="address mb-4">
-          8131 Broadway
-          <br /> Lemon Grove, CA 91945
-        </p>
-        <div className="restaurant-meta">
-          <a
-            href="https://www.giardinosd.com/"
-            className="text-green-500 hover:text-green-300"
-            target="_blank"
-          >
-            Website
-          </a>{" "}
-          |{" "}
-          <a
-            href="https://maps.app.goo.gl/GXj5nmaKACnHssy47"
-            className="text-green-500 hover:text-green-300"
-            target="_blank"
-          >
-            Directions
-          </a>
+      <section className="mb-8">
+        <h1 className="text-5xl font-bold text-green-400 mb-4">
+          Helix High School Class of 2004
+        </h1>
+        <h2 className="text-3xl mb-4">20 Year Reunion</h2>
+      </section>
+
+      <section className="mb-8">
+        <div className="mb-4">
+          <p className="text-xl">Saturday, June 29th, 2024</p>
+          <p className="text-xl font-semibold">6:00 PM - 8:30 PM</p>
+          <p className="font-semibold mt-2">Dinner will start at 6pm!</p>
         </div>
-      </div>
-      <div className="details mb-4">
-        <p className="price font-bold">$85 per person</p>
-        <p className="price-details">
-          Includes appetizers, dinner, soda, dessert, and two drink tickets
-        </p>
-      </div>
-      <div className="rsvp mb-4">
+
+        <div className="mb-8">
+          <p className="font-bold text-xl mb-1">Giardino Restaurant</p>
+          <address className="not-italic mb-4">
+            8131 Broadway
+            <br /> Lemon Grove, CA 91945
+          </address>
+          <p>
+            <a
+              href="https://www.giardinosd.com/"
+              className="text-green-500 hover:text-green-300 mr-2"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Website
+            </a>
+            |
+            <a
+              href="https://maps.app.goo.gl/GXj5nmaKACnHssy47"
+              className="text-green-500 hover:text-green-300 ml-2"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Directions
+            </a>
+          </p>
+        </div>
+      </section>
+
+      <section className="mb-8">
+        <p className="font-bold text-xl">$85 per person</p>
+        <p>Includes appetizers, dinner, soda, dessert, and two drink tickets</p>
+      </section>
+
+      <section className="mb-8">
         <p>
           To purchase tickets, venmo{" "}
           <a
             href="/venmo-info.jpeg"
             className="text-green-500 hover:text-green-300"
             target="_blank"
+            rel="noopener noreferrer"
           >
             @Karina-Robledo5
           </a>
         </p>
-      </div>
-      <div className="social">
+      </section>
+
+      <section className="mb-8">
         <p>
           Join the conversation on{" "}
           <a
             href="https://www.facebook.com/helix.class.of.2004.reunion"
             className="text-green-500 hover:text-green-300"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Facebook
           </a>
         </p>
-      </div>
-      <div className="other-events">
-        <h2 className="text-2xl mt-8 mb-4">Other Reunion Events</h2>
-        <p className="mb-4">
+      </section>
+
+      <section>
+        <h2 className="text-3xl mb-4">Other Reunion Events</h2>
+        <p>
           <a
             href="/flyer-all-events.jpeg"
             target="_blank"
             className="text-green-500 hover:text-green-300"
+            rel="noopener noreferrer"
           >
             Click here
           </a>{" "}
-          for details about all of the reunion events.{" "}
+          for details about all of the reunion events.
         </p>
-      </div>
+      </section>
     </main>
   );
 }
