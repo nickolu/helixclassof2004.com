@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="bg-black text-white p-8">
+    <main className="bg-gradient-to-br from-black  to-green-900 text-white p-8">
       <div className="printable-version text-right mb-4">
         <a
           href="/flyer-dinner.jpeg"
