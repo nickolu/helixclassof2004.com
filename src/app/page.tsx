@@ -94,7 +94,7 @@ export default function Home() {
         <h2 className="text-3xl mb-4">Other Reunion Events</h2>
         <p>
           <a
-            href="/flyer-all-events.jpeg"
+            href="/flyer-all-events-5-23.jpg"
             target="_blank"
             className="text-green-500 hover:text-green-300"
             rel="noopener noreferrer"
